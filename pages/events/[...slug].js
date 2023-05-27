@@ -26,7 +26,7 @@ function FilteredEventsPage() {
     numYear > 2030 ||
     numYear < 2021 ||
     numMonth < 1 ||
-    numMonth > 12
+    numMonth > 12 
   ) {
     return (
       <>
