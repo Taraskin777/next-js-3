@@ -4,8 +4,8 @@ import EventList from "../../components/events/event-list";
 import EventSearch from "../../components/events/event-search";
 
 function AllEventsPage(props) {
-  const { events } = props;
   const router = useRouter();
+  const { events } = props;
 
   function findEventshandler(year, month) {
     const fullPath = `/events/${year}/${month}`;
@@ -13,10 +13,10 @@ function AllEventsPage(props) {
   }
 
   return (
-    <div>
+    <>
       <EventSearch onSearch={findEventshandler} />
       <EventList items={events} />
-    </div>
+    </>
   );
 }
 
