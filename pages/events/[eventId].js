@@ -51,6 +51,7 @@ export async function getStaticProps(context) {
       selectedEvent: event,
     },
     revalidate: 30,
+    
   };
 }
 
@@ -65,7 +66,7 @@ export async function getStaticPaths() {
 
   return {
     paths: paths,
-    fallback: "blocking",
+    fallback: true,
   };
 }
 
