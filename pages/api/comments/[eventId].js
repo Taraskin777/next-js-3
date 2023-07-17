@@ -22,7 +22,7 @@ function handler(req, res) {
       text,
     };
     console.log(newComment);
-    res.status(201).json({ message: "Added comment", comment: newComment });
+    res.status(201).json({ message: "Added comment", comments: newComment });
   }
   if (req.method === "GET") {
     const dummyList = [
